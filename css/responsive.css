@@ -1,20 +1,94 @@
 /* Breaking point para smartphones (600px) */
-@media screen and (max-width: 600px) {
-    header{
-        padding: 10px 0;
-        font-size: 10px;
+@media screen and (max-width: 640px) {
+    html{
+        font-size: 14px;
     }
-    
-    header h1{
-        margin: 0;
-    }
+  
+  header {
+    padding: 10px 0;
+  }
 
-    #main{
+  header h1 {
+    margin: 0;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+  #menu,
+  #content {
+    width: 100%;
+  }
+
+  #menu {
+    padding: 10px 0;
+  }
+
+  #menu span {
+    display: none;
+  }
+
+  /*FLEX
+        FLEX-DIRECTION:ROW
+        JUYSTIFY-CONTENT (HORIZONTAL)
+        ALIGN-ITEMS (VERTICAL)
+
+        FLEX-DIRECTION: COLUMN
+        ALIGN-ITEMS(HORIZONTAL)
+        JUSTIFY-COINTENT (VERTICAL)
+    */
+
+  #menu ul {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    gap: 30px; /*lacuna*/
+  }
+
+  #menu li{
+    margin: 0;
+  }
+
+  #content {
+    padding: 15px 10px;
+    box-sizing: border-box;
+  }
+
+
+  .movie-card {
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 25px;
+    gap: 20px;
+  }
+
+  .movie-card img,
+  .movie-card span {
+    width: 100%;
+  }
+
+   .movie-card img{
+    border-radius: 25px;
+   }
+
+  .movie-card span {
+    padding: 0;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    #main {
         flex-direction: column;
     }
+
     #menu,
-    #content{
+    #content {
         width: 100%;
+        box-sizing: border-box;
     }
 
     #menu{
@@ -25,22 +99,17 @@
         display: none;
     }
 
-
-    /*FLEX
-        FLEX-DIRECTION:ROW
-        JUYSTIFY-CONTENT (HORIZONTAL)
-        ALIGN-ITEMS (VERTICAL)
-
-        FLEX-DIRECTION: COLUMN
-        ALIGN-ITEMS(HORIZONTAL)
-        JUSTIFY-COINTENT (VERTICAL)
-    */
-
     #menu ul{
         display: flex;
-        margin: 0;
-       justify-content: center;
-       gap: 30px;
+        justify-content: center;
+        gap: 150px;
+        font-size: 1.2rem;
     }
+
+    footer span {
+        font-size: 1.2rem;
+    }
+
+
 
 }

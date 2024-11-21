@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
     margin: 0;
   }
@@ -11,7 +15,7 @@ body {
     text-align: center;
     font-family: "logo";
     color: #fff;
-    font-size: 300%;
+    font-size: 2.5rem;
     text-shadow: 3px 3px 5px #A63D17;
   }
   
@@ -29,7 +33,7 @@ body {
 
   #menu span{
     font-family: "bold";
-    font-size: 22px;
+    font-size: 1.5rem;
   }
 
 
@@ -40,7 +44,7 @@ body {
 
   #menu li{
     font-family: "regular";
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     cursor: pointer;
   }
 
@@ -57,6 +61,7 @@ body {
   #content-title{
     font-family: "bold";
     text-align: center;
+    font-size: 2rem;
   }
 
   .movie-card{
@@ -77,7 +82,7 @@ body {
     width: 50%;
     padding: 0 20px;
     font-family: "regular";
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 
   footer{
@@ -88,4 +93,5 @@ body {
   footer span{
     color: #fff;
     font-family: "bold";
+    font-size: 1rem;
   }
